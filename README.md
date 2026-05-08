@@ -18,7 +18,7 @@ API Connection: Verify that the API base URL in services/api.ts points to http:/
 
 Execution: Run npm run dev. The application will be accessible at http://localhost:3000.
 
-<br>
+---
 
 Project Specification
 This project is a decoupled full-stack application centered around secure image management and automated processing.
@@ -53,7 +53,7 @@ Interactive Components: Features a static sidebar with a Live Image Preview and 
 
 Version Control: Supports a nested list of image versions (overlays) with custom horizontal scrolling and individual version management.
 
-<br>
+---
 
 Demo
 A full demonstration of the application's functionality, including the upload process, metadata viewing, and the processed image results, can be found in this YouTube video:
