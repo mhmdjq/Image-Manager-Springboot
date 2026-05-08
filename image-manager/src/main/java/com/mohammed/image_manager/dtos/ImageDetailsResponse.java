@@ -10,7 +10,7 @@ public record ImageDetailsResponse(
         String description,
         String originalFileName,
         String format,
-        String dimensions, // e.g., "1920x1080"
+        String dimensions,
         String fileSizeFormatted,
         String imageUrl,
         int overlayCount,
