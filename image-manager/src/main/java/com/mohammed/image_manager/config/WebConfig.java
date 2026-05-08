@@ -1,4 +1,4 @@
-package com.mohammed.image_manager;
+package com.mohammed.image_manager.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
