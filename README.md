@@ -47,6 +47,7 @@ The frontend is a modern, dark-themed dashboard built with **Next.js 16** and th
 
 ### **Demo**
 A full demonstration of the application's functionality, including the upload process, metadata viewing, and the processed image results, can be found in this YouTube video:  
-[https://www.youtube.com/watch?v=0GJmp2A90oE](https://www.youtube.com/watch?v=0GJmp2A90oE)
+https://www.youtube.com/watch?v=pzfKcYM0q_I
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b607ae4d-34e9-4ac6-ac13-9d51ec5aba1f" />
 
 ---
