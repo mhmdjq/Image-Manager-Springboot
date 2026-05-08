@@ -1,3 +1,4 @@
+Image Manager
 Setup Instructions
 1. Backend (Spring Boot & Java 25)
 
@@ -11,7 +12,7 @@ Execution: Run the application via your IDE or use mvn spring-boot:run. The API 
 
 2. Frontend (Next.js)
 
-Dependencies: Run npm install in the frontend/ directory. (Ensure axios, lucide-react, and tailwind-scrollbar are installed).
+Dependencies: Run npm install in the frontend/ directory.
 
 API Connection: Verify that the API base URL in services/api.ts points to http://localhost:8080/api/images.
 
@@ -25,13 +26,11 @@ The backend is built as a dedicated REST API using Spring Boot 4.0.6, focusing o
 
 Controllers: Expose RESTful endpoints and manage CORS for the Next.js frontend.
 
-Services: Contain the core business logic, utilizing Java AWT Graphics2D for advanced text-overlay processing.
+Services: Contain the core business logic, utilizing Java AWT Graphics2D for advanced text-overlay processing with dynamic line wrapping and font scaling.
 
 Repositories: Manage data persistence using Spring Data JPA and PostgreSQL.
 
 DTOs & Records: Create immutable data contracts to ensure internal entities are never exposed.
-
-Mappers: Handle clean conversion between database entities and API responses.
 
 Global Exception Handler: Intercepts errors (like IllegalArgumentException for long text) and returns clean, structured JSON messages to the frontend.
 
@@ -39,20 +38,20 @@ Technical Highlights:
 
 Security: Files are renamed using UUIDs to prevent filename collisions and directory traversal attacks.
 
-Processing: Implemented a dynamic text-wrapping and font-scaling algorithm. Text is rendered with a black shadow offset to guarantee readability on any background.
+Processing: Text is rendered with a black shadow offset to guarantee readability on any background, with automatic font-size adjustment to fit the image dimensions.
 
-Robustness: Includes file metadata extraction (width/height) and physical file cleanup during deletion.
+Robustness: Includes file metadata extraction and physical file cleanup during deletion.
 
 Frontend Implementation (Next.js)
 The frontend is a modern, dark-themed dashboard built with Next.js 16 and the App Router.
 
 UI/UX: Styled with Tailwind CSS featuring a minimalist "Touch to Reveal" interaction model—action buttons stay hidden until the user hovers over a card.
 
-Interactive Components: Features a static sidebar with a real-time Image Preview and a responsive 3-column gallery grid.
+Interactive Components: Features a static sidebar with a Live Image Preview and a responsive 3-column gallery grid.
 
-Version Control: Supports a nested list of image versions (overlays) with horizontal scrolling and individual deletion capabilities.
+Version Control: Supports a nested list of image versions (overlays) with custom horizontal scrolling and individual version management.
 
 Demo
-A full demonstration of the application's functionality, including the upload process and the processed image results, can be found in this YouTube video:
+A full demonstration of the application's functionality, including the upload process, metadata viewing, and the processed image results, can be found in this YouTube video:
 
 https://www.youtube.com/watch?v=0GJmp2A90oE
